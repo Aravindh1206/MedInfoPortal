@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Signup</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+</head>
+
+<body background="sign.jpg">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <form action="main.html" method="post" style="margin-left:135px; margin-right:150px; margin-top:150px;">
+          <img style="width:8rem; margin-left:25px;" src="logo.png" alt="">
+          <h6 class="h"style="margin-bottom: 10px;color:black;">Email address</h6>
+          <input type="email" name="email" id="email" placeholder="Enter email..">
+          <h6 style="margin-bottom: 10px; margin-top:10px; color:black;" class="h">Password</h6>
+          <input  type="password" name="password" id="pass" placeholder="Enter password...">
+          <h6 style="margin-bottom: 10px; margin-top:10px;color:black;" class="h">Confirm Password</h6>
+          <input style="margin-bottom: 10px;" type="password" name="password" id="cpass" placeholder="Confirm password...">
+          <input style="margin-bottom: 10px;margin-left:58px;" type="button" class="btn-my btm-my:hover" name="Signup" value="Signup" onclick="signup();">
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCieeyBKX1HVtppYxU26W5xWNmMLZqjxjo",
+      authDomain: "auth-c7afc.firebaseapp.com",
+      databaseURL: "https://auth-c7afc.firebaseio.com",
+      projectId: "auth-c7afc",
+      storageBucket: "auth-c7afc.appspot.com",
+      messagingSenderId: "724601055763",
+      appId: "1:724601055763:web:cf83387023f0afadcdade6",
+      measurementId: "G-TMFCB5B303"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script src="js/signup.js" type="text/javascript"></script>
+
+</body>
+
+</html>

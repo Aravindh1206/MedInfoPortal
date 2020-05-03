@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+  <title>Form</title>
+</head>
+
+<body style="background-color:#f7feff;">
+
+  <div class="container-fluid" style="padding-left:0px; padding-right:0px;">
+    <div class="row">
+      <div class="col-sm-8" style="padding-left:0px; padding-right:0px;">
+        <img src="med.jpg" alt="" width=100% height="750">
+      </div>
+      <div class="col-sm-4" style="background-color:#f7feff;padding-left:0px; padding-right:0px;margin-bottom:4px;">
+        <img style="width:8rem;margin-left:200px; margin-top:100px;margin-bottom:20px;" src="logo.png" alt="">
+        <input type="image" src="gicon.png" alt="button" class="btn:hover" onclick="glogin();" value="Signin with Google" style="width:10rem;margin-bottom:5px;margin-left:180px; margin-right:130px;">
+        <form action="signup.html" method="post" style="margin-left:180px; margin-right:150px;">
+          <p style="font-size:12px;color:blue;">~~OR LOGIN WITH EMAIL~~</p>
+            <h6 style="margin-bottom: 10px;" class="h">Email address</h6>
+            <input type="email" name="email" id="email" placeholder="Enter email..">
+            <h6 style="margin-bottom: 10px; margin-top:10px;" class="h">Password</h6>
+            <input style="margin-bottom: 10px;" type="password" name="password" id="pass" placeholder="Enter password...">
+          <input style="margin-bottom: 10px;margin-left:55px;" type="button" class="btn-my btm-my:hover" name="Login" value="Login" onclick="login();">
+          <hr>
+          <h4 style="margin-left:30px;">New user?  |  <a style="color:blue;" href="signup.html">Sign up</a></h4>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCieeyBKX1HVtppYxU26W5xWNmMLZqjxjo",
+      authDomain: "auth-c7afc.firebaseapp.com",
+      databaseURL: "https://auth-c7afc.firebaseio.com",
+      projectId: "auth-c7afc",
+      storageBucket: "auth-c7afc.appspot.com",
+      messagingSenderId: "724601055763",
+      appId: "1:724601055763:web:cf83387023f0afadcdade6",
+      measurementId: "G-TMFCB5B303"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script src="js/login.js" type="text/javascript"></script>
+  <script src="js/glog.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Get Data</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/get.css">
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+  </head>
+  <body background="get.jpg">
+    <img style="width:7rem;margin-left:45%;" src="get.png" alt="">
+    <h1 style="text-align:center;color:white;">Get your Medical Info</h1>
+    <input style="margin-left:37%;"type="text" id="mid" placeholder="Enter your Medical ID">
+    <button style="margin-left:15px;"type="button" onclick="get();"class="btn btn-my" name="Get Data">Get Data</button>
+    <table style="margin-left:32%;">
+      <tr>
+        <td>Name:</td>
+        <td><b id="username"></b></td>
+      </tr>
+      <tr>
+        <td>Age:</td>
+        <td><b id="userage"></b></td>
+      </tr>
+      <tr>
+        <td>DOB:</td>
+        <td><b id="userdob"></b></td>
+      </tr>
+      <tr>
+        <td>Sex:</td>
+        <td><b id="usersex"></b></td>
+      </tr>
+      <tr>
+        <td>Medical ID:</td>
+        <td><b id="usermid"></b></td>
+      </tr>
+      <tr>
+        <td>Phone no:</td>
+        <td><b id="userphone"></b></td>
+      </tr>
+      <tr>
+        <td>Mail-ID:</td>
+        <td><b id="usermail"></b></td>
+      </tr>
+      <tr>
+        <td>Parent Name:</td>
+        <td><b id="userpname"></b></td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><b id="useraddress"></b></td>
+      </tr>
+      <tr>
+        <td>State:</td>
+        <td><b id="userstate"></b></td>
+      </tr>
+      <tr>
+        <td>Nationality:</td>
+        <td><b id="usernation"></b></td>
+      </tr>
+      <tr>
+        <td>Occupation:</td>
+        <td><b id="userjob"></b></td>
+      </tr>
+      <tr>
+        <td>Height:</td>
+        <td><b id="userheight"></b></td>
+      </tr>
+      <tr>
+        <td>Weight:</td>
+        <td><b id="userweight"></b></td>
+      </tr>
+      <tr>
+        <td>Blood Group:</td>
+        <td><b id="userblood"></b></td>
+      </tr>
+      <tr>
+        <td>Infections(<1yr):</td>
+        <td><b id="userinfect"></b></td>
+      </tr>
+      <tr>
+        <td>Disease:</td>
+        <td><b id="userdisease"></b></td>
+      </tr>
+    </table>
+    <input style="margin-bottom: 10px;margin-left:45%; width:200px;" type="button" class="btn-my btm-my:hover" name="back" value="<<Back" onclick="back();">
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCieeyBKX1HVtppYxU26W5xWNmMLZqjxjo",
+        authDomain: "auth-c7afc.firebaseapp.com",
+        databaseURL: "https://auth-c7afc.firebaseio.com",
+        projectId: "auth-c7afc",
+        storageBucket: "auth-c7afc.appspot.com",
+        messagingSenderId: "724601055763",
+        appId: "1:724601055763:web:cf83387023f0afadcdade6",
+        measurementId: "G-TMFCB5B303"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="js/get.js" charset="utf-8"></script>
+  </body>
+</html>
